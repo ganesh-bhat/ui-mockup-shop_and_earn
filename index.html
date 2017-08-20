@@ -1,0 +1,654 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-amber.min.css" />-->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.pink-amber.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+	<script src="js/application.js"></script>
+    
+</head>
+
+<body>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+        <header class="demo-header mdl-layout__header mdl-color--grey-800 mdl-color-text--grey-100">
+            <div class="mdl-layout__header-row">
+                <img class="mdl-layout-title" src="images/oie_transparent.png" />
+
+
+                <!--		  <i class="material-icons">search</i> 
+          <div class="mdl-textfield mdl-js-textfield">
+              <input class="mdl-textfield__input" type="text" id="fname">
+              <label class="mdl-textfield__label" for="fname" style="color:white;">Search</label>
+            </div>
+-->
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" for="sample6">
+                        <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                        <input class="mdl-textfield__input" type="text" id="sample6">
+                        <label class="mdl-textfield__label" for="sample-expandable">Expandable Input</label>
+                    </div>
+                </div>
+
+                <div class="mdl-layout-spacer"></div>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                    <i class="material-icons">account_circle</i> Login
+                </button>
+            </div>
+            <!-- Tabs -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#welcome-1" class="mdl-layout__tab is-active" id="welcome">
+                    <label class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">new_releases</i>
+                    </label>
+                    Welcome
+                </a>
+
+                <a href="#offers-2" class="mdl-layout__tab">
+                    <label class="mdl-button mdl-js-button mdl-button--icon" id="offers">
+                        <i class="material-icons">new_releases</i>
+                    </label>
+                    Offers
+                </a>
+
+                <a href="#shops-3" class="mdl-layout__tab">
+                    <label class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">shopping_cart</i>
+                    </label> Shops
+                </a>
+
+                <a href="#help-4" class="mdl-layout__tab">
+                    <label class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">help</i>
+                    </label>
+                    How it Works</a>
+
+                <a href="#myaccount-5" class="mdl-layout__tab">
+                    <label class="mdl-button mdl-js-button mdl-button--icon">
+                        <i class="material-icons">monetization_on</i>
+                    </label>
+                    My Account</a>
+
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">Title</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+        </div>
+
+        <div class="demo-ribbon" id="ribbon"></div>
+        <main class="demo-main mdl-layout__content">
+
+            <section class="mdl-layout__tab-panel is-active" id="welcome-1">
+                <div class="demo-container mdl-grid">
+                    
+                    <div class="welcome-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Welcome</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                      Get Started
+                    </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                <i class="material-icons">share</i>
+                            </button>
+                        </div>
+                    </div>
+
+					
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title mdl-color-text--grey-800">
+                            <h2 class="mdl-card__title-text ">Login</h2>
+                        </div>
+                        <div>
+                           <img src="images/google/btn_google_signin_dark_normal_web.png"/>
+                        </div>
+                    </div>
+
+
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title mdl-color-text--grey-800">
+                            <h2 class="mdl-card__title-text ">What is new here</h2>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>No virtual account, actual cash returned</li>
+                                <li>Excellent Deals</li>
+                                <li>Zero Spam Policy</li>
+                                <li>AI engine to suggest you ideal deals</li>
+                                <li>Quick turnaround time</li>
+                                <li>Customer support ticketing system </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="offers-2">
+				
+				<div class="centerd-search-card mdl-shadow--2dp">
+					  <i class="material-icons">search</i> 
+					  <div class="mdl-textfield mdl-js-textfield">
+						  <input class="mdl-textfield__input" type="text" id="fname2" size="450">
+						  <label class="mdl-textfield__label" for="fname2" style="color:white;">Search</label>
+						</div>
+				</div>
+				
+
+				
+				<div class="mdl-grid">
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					   <i class="mdl-icon-toggle__label material-icons mdl-color-text--pink-500">favorite</i>
+					</button>
+					
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Online Shopping
+					</button>
+					
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Hotels & Travel
+					</button>
+
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Gifts
+					</button>
+
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Health & Fitness
+					</button>
+					
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Food
+					</button>
+
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Recharge
+					</button>
+
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Hosting Services
+					</button>
+					
+				</div>
+				
+                <div class="demo-container mdl-grid">
+                    
+                    <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offer</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                           <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                     <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Offers</h1>
+                        </div>
+                        <div class="mdl-card__supporting-text">
+                            <p>
+                                Shop and Earn is an extremely easy way to earn actual cash as discount, each time you shop.
+                            </p>
+                            <p>
+                                It is as simple as finding the store or product of your interest here and navigating to it.
+                            </p>
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>GRAB DEAL
+                            </a>
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">playlist_add</i>wishlist
+                            </a>
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="favorite-1">
+                                <input type="checkbox" id="favorite-1" class="mdl-switch__input" >
+                            </label>
+                        </div>
+                        
+                    </div>
+                    
+                   
+
+                </div>
+            </section>
+            
+			
+			    <section class="mdl-layout__tab-panel" id="shops-3">
+				
+				<div class="centerd-search-card mdl-shadow--2dp">
+					  <i class="material-icons">search</i> 
+					  <div class="mdl-textfield mdl-js-textfield">
+						  <input class="mdl-textfield__input" type="text" id="fname2" size="450">
+						  <label class="mdl-textfield__label" for="fname2" style="color:white;">Search</label>
+						</div>
+				</div>
+				
+
+				
+				<div class="mdl-grid">
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					   <i class="mdl-icon-toggle__label material-icons mdl-color-text--pink-500">favorite</i>
+					</button>
+					
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Online Shopping
+					</button>
+					
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Hotels & Travel
+					</button>
+
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Gifts
+					</button>
+
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Health & Fitness
+					</button>
+					
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Food
+					</button>
+
+					<button class="mdl-cell mdl-cell--1-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Recharge
+					</button>
+
+					<button class="mdl-cell mdl-cell--2-col mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+					  Hosting Services
+					</button>
+					
+				</div>
+				
+                <div class="demo-container mdl-grid">
+                    
+                    <div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Amazon</h1>
+                        </div>
+                        
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>Shop Now
+                            </a>
+                           
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+					
+					<div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Flipkart</h1>
+                        </div>
+                        
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>Shop Now
+                            </a>
+                           
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+					
+					<div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Snapdeal</h1>
+                        </div>
+                        
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>Shop Now
+                            </a>
+                           
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+					
+					<div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">Jabong</h1>
+                        </div>
+                        
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>Shop Now
+                            </a>
+                           
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+					
+					<div class="offers-card-wide mdl-card mdl-shadow--2dp ">
+                        <div class="mdl-card__title">
+                            <h1 class="mdl-card__title-text ">PayTM</h1>
+                        </div>
+                        
+                        <div class="mdl-card__actions mdl-card--border">
+                            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <i class="material-icons">shopping_cart</i>Shop Now
+                            </a>
+                           
+                        </div>
+                        <div class="mdl-card__menu">
+                            <label class="mdl-icon-toggle mdl-js-icon-toggle mdl-js-ripple-effect" for="icon-toggle-1">
+							  <input type="checkbox" id="icon-toggle-1" class="mdl-icon-toggle__input" checked>
+							  <i class="mdl-icon-toggle__label material-icons">favorite</i>
+							</label>
+                        </div>
+                        
+                    </div>
+                    
+              
+                    
+                   
+
+                </div>
+            </section>
+			
+     
+            
+            <section class="mdl-layout__tab-panel" id="help-4">
+                <div class="page-content">
+                    <div class="demo-container mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                        <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+                            <h3>How it works?</h3>
+                            <p>
+                                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <section class="mdl-layout__tab-panel" id="myaccount-5">
+                <div class="page-content">
+
+                    <div class="demo-container mdl-grid">
+                        <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                        <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+
+                            <h3>My Account</h3>
+                            <p>
+                                Cillum dolor esse sit incididunt velit eiusmod magna ad nostrud officia aute dolor dolor. Magna esse ullamco pariatur adipisicing consectetur eu commodo officia. Ex cillum consequat mollit minim elit est deserunt occaecat nisi amet. Quis aliqua nostrud Lorem occaecat sunt. Eiusmod quis amet ullamco aliquip dolore ut incididunt duis adipisicing. Elit consequat nisi eiusmod aute ipsum sunt veniam do est. Occaecat mollit aliquip ut proident consectetur amet ex dolore consectetur aliqua elit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            
+        </main>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">Title</div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    
+
+</body>
+
+</html>

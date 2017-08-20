@@ -1,0 +1,104 @@
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.demo-ribbon {
+  width: 100%;
+  height: 40vh;
+  background-color: #303F9F;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.demo-main {
+  margin-top: -35vh;
+}
+
+
+
+.demo-container {
+max-width: 1600px;
+width: calc(100% - 16px);
+margin: 0 auto;
+}
+
+.demo-content {
+border-radius: 2px;
+padding: 50px 36px;
+margin-bottom: 80px;
+}
+
+.demo-layout.is-small-screen .demo-content {
+padding: 40px 28px;
+}
+
+
+.demo-footer .mdl-mini-footer--link-list a {
+font-size: 13px;
+}
+
+.demo-footer {
+ height:0px;
+}
+
+.welcome-card-wide.mdl-card {
+width: 500px;
+margin: 20px;
+}
+
+.welcome-card-wide > .mdl-card__title {
+color: #000;
+height: 200px;
+background: url('images/dog.png') bottom right 15% no-repeat #FFD54F;
+}
+
+.offers-card-wide.mdl-card {
+width: 300px;
+margin: 20px;
+}
+
+.offers-card-wide > .mdl-card__title {
+color: #000;
+height: 150px;
+background:  bottom right 15% no-repeat #FFD54F;
+}
+
+.material-icons.saveForLater {
+color: #AD1457;
+}
+
+.material-icons.notSaved {
+color: #F8BBD0;
+}
+
+.demo-card-wide.mdl-card {
+width: 350px;
+margin: 20px;
+}
+
+.demo-card-wide > .mdl-card__menu {
+color: #000;
+}
+.centerd-search-card {
+margin-left: auto; 
+margin-right: auto;
+width: 400px;
+height: 50px;
+background: #fff;
+border-radius:3px;
+padding-left:15px;
+}
+
